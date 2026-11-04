@@ -1,7 +1,9 @@
 import pandas as pd
 
-data = {"Name": ["Asha", "Bala", "Charan"], "Score": [85, 90, 78]}
+data = {"City": ["Pune", "Kochi", "Jaipur"], "Temperature": [29, 31, 26]}
 df = pd.DataFrame(data)
 print(df)
-print("Average Score:", df["Score"].mean())
- 
+print("Average Temperature:", df["Temperature"].mean())
+
+print("Maximum Temperature:", df["Temperature"].max())
+print("Minimum Temperature:", df["Temperature"].min())
